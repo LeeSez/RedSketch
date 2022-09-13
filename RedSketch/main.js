@@ -33,6 +33,11 @@ function render(){
 function keyPressed(event){
   console.log(event.keyCode);
   switch(event.keyCode){
+    case 8: //backspace
+      ctx.clearRect(0,0,drawBoard.width,drawBoard.height);
+      ctx.beginPath();
+      x=drawBoard.width/2;
+      y=drawBoard.height/2;
     case 39: // right
       turnWheelRight(innerCircleLeft);
       x++;
