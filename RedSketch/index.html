@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Sketch</title>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+  <body onload="init()" onkeydown="keyPressed(event)">
+    <h1 id="name">Red Sketch</h1>
+    <canvas id="drawBoard"></canvas>
+    <div class="sideNobs" id="nobLeft"><div class="innerCircle" id="innerCircleLeft"></div></div>
+    <div class="sideNobs" id="nobRight"><div class="innerCircle" id="innerCircleRight"></div></div>
+  </body>
+</html>
