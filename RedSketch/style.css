@@ -1,7 +1,21 @@
-body {
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin:0;
-  background-color: #b91920;
   height: 100vh;
+
+  font-family: 'Dosis', sans-serif;
+}
+
+#container {
+  margin-top:2vh;
+  background-color: #b91920;
+  border-radius: 30px;
+  box-shadow: 20px 20px #9c131a, 0px 20px #9c131a, 20px 0px #9c131a;
+  height: 90vh;
+  width: 90vw;
 
   font-family: 'Great Vibes', cursive;
 
@@ -28,6 +42,7 @@ body {
 .sideNobs{
   background-color: white;
   border-radius: 100%;
+  box-shadow: 5px 5px #e1e1e1, 0px 5px #e1e1e1, 5px 0px #e1e1e1;
 
   margin-bottom: 1%;
   overflow: hidden;
@@ -35,6 +50,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+  top: -5px;
 }
 
 #nobRight{
@@ -46,10 +64,10 @@ body {
 }
 
 #name{
-  color:gold;
+  color:#ffd700;
   font-size: 3em;
   text-align: center;
-  text-shadow: 2px 2px rgb(196, 149, 29), -2px -2px rgb(196, 149, 29);
+  text-shadow: 2px 2px #c4951d, -2px -2px #c4951d;
 
   margin: 0;
   padding: 2% 0;
@@ -63,4 +81,39 @@ body {
   height: 80%;
   border-radius: 50%;
   border:10px solid white;
+}
+
+#instructionsBack {
+  position:absolute;
+  width:100vw;
+  height: 100vh;
+  background-color: rgba(122, 122, 122, 0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#instructions{
+  min-width: fit-content;
+  min-height: fit-content;
+  width:30vw;
+  height:50vh;
+  background-color: #FFFCFF;
+  border-radius: 40px;
+  padding:0 5vw;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+}
+
+td{
+  width:10vw;
 }

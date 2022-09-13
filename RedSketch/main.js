@@ -3,6 +3,9 @@ let nobLeft, nobRight,innerCircleLeft,innerCircleRight;
 let ctx, drawBoard;
 let x,y;
 
+let instructionVisibilty = true;
+let instructionWindow;
+
 function init(){
   nobLeft =  document.getElementById("nobLeft");
   nobRight = document.getElementById("nobRight");
@@ -20,6 +23,8 @@ function init(){
   ctx = drawBoard.getContext("2d");
   x=drawBoard.width/2;
   y=drawBoard.height/2;
+
+  instructionWindow = document.getElementById("instructionsBack");
 }
 
 function render(){
@@ -31,6 +36,10 @@ function render(){
 }
 
 function keyPressed(event){
+  if(instructionVisibilty){
+    instructionWindow.style.display = "none";
+    instructionVisibilty = false;
+  }
   console.log(event.keyCode);
   switch(event.keyCode){
     case 8: //backspace
